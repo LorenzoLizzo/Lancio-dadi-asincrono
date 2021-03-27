@@ -28,10 +28,11 @@ namespace Lancio_dadi_asincrono
         readonly Uri uriFaccia5 = new Uri("faccia5.png", UriKind.Relative);
         readonly Uri uriFaccia6 = new Uri("faccia6.png", UriKind.Relative);
 
+        private object a = new object();
+
         Random r;
         int dado1;
         int dado2;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -49,12 +50,11 @@ namespace Lancio_dadi_asincrono
                     {
                         dado1 = r.Next(1, 7);
                         dado2 = r.Next(1, 7);
-
                         this.Dispatcher.BeginInvoke(new Action(() => {
                             AssegnazioneImmagine(img1, dado1);
                             AssegnazioneImmagine(img2, dado2);
                         }));
-                        Thread.Sleep(100);
+                        Thread.Sleep(10);
                     }
 
                 });
@@ -99,5 +99,36 @@ namespace Lancio_dadi_asincrono
                 throw ex;
             }
         }
+
+        private void btnEstrai_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                img3.Source = img1.Source;
+                lblPiu.Visibility = Visibility.Visible;
+                img4.Source = img2.Source;
+                lblUguale.Visibility = Visibility.Visible;
+                lblRisultato.Content = int.Parse(img3.Source.ToString()[img3.Source.ToString().Length - 5].ToString()) + int.Parse( img4.Source.ToString()[img4.Source.ToString().Length - 5].ToString()); 
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
+        }
+
+        public void CalcolaRisultato()
+        {
+            try
+            {
+               
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+      
     }
 }

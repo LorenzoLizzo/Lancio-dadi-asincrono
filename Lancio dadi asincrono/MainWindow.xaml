@@ -7,8 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image x:Name="img1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="94,49,0,0"/>
-        <Image x:Name="img2" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="272,49,0,0"/>
+        <Image x:Name="img1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="62,41,0,0" Stretch="Fill"/>
+        <Image x:Name="img2" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="218,41,0,0" Stretch="Fill"/>
+
+        <Button x:Name="btnEstrai" Content="Estrai" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="566,91,0,0" Height="64" Click="btnEstrai_Click"/>
+
+        <Image x:Name="img3" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="62,221,0,0" Stretch="Fill"/>
+        <Image x:Name="img4" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="255,221,0,0" Stretch="Fill"/>
+        <Label x:Name="lblPiu" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="179,253,0,0" Visibility="Hidden"/>
+        <Label x:Name="lblUguale" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="393,253,0,0" Visibility="Hidden"/>
+        <Label x:Name="lblRisultato" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,181,0,0"/>
 
     </Grid>
 </Window>
