@@ -5,18 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lancio_dadi_asincrono"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Estrazione dadi" Height="450" Width="800">
     <Grid>
-        <Image x:Name="img1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="62,41,0,0" Stretch="Fill"/>
-        <Image x:Name="img2" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="218,41,0,0" Stretch="Fill"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1.5*" />
+        </Grid.ColumnDefinitions>
 
-        <Button x:Name="btnEstrai" Content="Estrai" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="566,91,0,0" Height="64" Click="btnEstrai_Click"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <Image x:Name="img3" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="62,221,0,0" Stretch="Fill"/>
-        <Image x:Name="img4" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="255,221,0,0" Stretch="Fill"/>
-        <Label x:Name="lblPiu" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="179,253,0,0" Visibility="Hidden"/>
-        <Label x:Name="lblUguale" Content="=" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="393,253,0,0" Visibility="Hidden"/>
-        <Label x:Name="lblRisultato" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,181,0,0"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Programma per l'estrazione dei dadi" VerticalAlignment="Top" FontSize="36" Grid.ColumnSpan="3"/>
+
+        <Image x:Name="img1" Height="100" Width="100" Stretch="Fill" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right"/>
+        <Image x:Name="img2" Height="100" Width="100" Stretch="Fill" Grid.Column="1" Grid.Row="1"/>
+
+        <Button x:Name="btnEstrai" Content="Estrai" Width="105" Height="64" Click="btnEstrai_Click" Grid.Column="2" Grid.Row="1"/>
+
+        <Image x:Name="img3" Height="100" Width="100" Stretch="Fill" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right"/>
+        <Image x:Name="img4" Height="100" Width="100" Stretch="Fill" Grid.Column="1" Grid.Row="2"/>
+        <Label x:Name="lblPiu" Content="+" FontSize="72" Height="130" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="2"/>
+        <Label x:Name="lblUguale" Content="=" HorizontalAlignment="Right" FontSize="72" Height="130" Grid.Column="1" Grid.Row="2" />
+        <Label x:Name="lblRisultato" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="72" Grid.Column="2" Grid.Row="2" Height="130"/>
+
 
     </Grid>
 </Window>

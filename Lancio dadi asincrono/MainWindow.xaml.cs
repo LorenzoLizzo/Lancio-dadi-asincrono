@@ -104,6 +104,8 @@ namespace Lancio_dadi_asincrono
         {
             try
             {
+                lblPiu.Visibility = Visibility.Visible;
+                lblUguale.Visibility = Visibility.Visible;
                 img3.Source = img1.Source;
                 lblPiu.Visibility = Visibility.Visible;
                 img4.Source = img2.Source;
@@ -116,19 +118,6 @@ namespace Lancio_dadi_asincrono
             }
            
         }
-
-        public void CalcolaRisultato()
-        {
-            try
-            {
-               
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
       
     }
 }
