@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace Lancio_dadi_asincrono
 {
@@ -27,9 +28,76 @@ namespace Lancio_dadi_asincrono
         readonly Uri uriFaccia5 = new Uri("faccia5.png", UriKind.Relative);
         readonly Uri uriFaccia6 = new Uri("faccia6.png", UriKind.Relative);
 
+        Random r;
+        int dado1;
+        int dado2;
+
         public MainWindow()
         {
             InitializeComponent();
+            SorteggioDadi();
+        }
+
+        private async void SorteggioDadi()
+        {
+            try
+            {
+                r = new Random();
+                await Task.Run(() =>
+                {
+                    while (true)
+                    {
+                        dado1 = r.Next(1, 7);
+                        dado2 = r.Next(1, 7);
+
+                        this.Dispatcher.BeginInvoke(new Action(() => {
+                            AssegnazioneImmagine(img1, dado1);
+                            AssegnazioneImmagine(img2, dado2);
+                        }));
+                        Thread.Sleep(100);
+                    }
+
+                });
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        public void AssegnazioneImmagine(Image img, int dado)
+        {
+            try
+            {
+                switch (dado)
+                {
+                    case 1:
+                        img.Source = new BitmapImage(uriFaccia1);
+                        break;
+                    case 2:
+                        img.Source = new BitmapImage(uriFaccia2);
+                        break;
+                    case 3:
+                        img.Source = new BitmapImage(uriFaccia3);
+                        break;
+                    case 4:
+                        img.Source = new BitmapImage(uriFaccia4);
+                        break;
+                    case 5:
+                        img.Source = new BitmapImage(uriFaccia5);
+                        break;
+                    case 6:
+                        img.Source = new BitmapImage(uriFaccia6);
+                        break;
+                    default:
+                        throw new Exception("Errore");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

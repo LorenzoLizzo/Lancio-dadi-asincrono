@@ -1,0 +1,15 @@
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\bin\Debug\Lancio dadi asincrono.exe.config
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\bin\Debug\Lancio dadi asincrono.exe
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\bin\Debug\Lancio dadi asincrono.pdb
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\Lancio dadi asincrono.csprojAssemblyReference.cache
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\MainWindow.g.cs
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\App.g.cs
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\Lancio dadi asincrono_MarkupCompile.cache
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\Lancio dadi asincrono_MarkupCompile.lref
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\MainWindow.baml
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\Lancio dadi asincrono.g.resources
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\Lancio_dadi_asincrono.Properties.Resources.resources
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\Lancio dadi asincrono.csproj.GenerateResource.cache
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\Lancio dadi asincrono.csproj.CoreCompileInputs.cache
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\Lancio dadi asincrono.exe
+C:\Users\Lorenzo\Desktop\Lancio-dadi-asincrono\Lancio dadi asincrono\obj\Debug\Lancio dadi asincrono.pdb
